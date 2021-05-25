@@ -3,7 +3,7 @@ import png from './assets/1.jpg'
 
 const div = document.getElementById('app')
 
-// div.innerHTML = `<img src='${png}'>`
+div.innerHTML = `<img src='${png}'>`
 
 const button = document.createElement('button')
 button.innerText = '懒加载'
