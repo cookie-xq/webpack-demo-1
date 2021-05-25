@@ -11,9 +11,12 @@ module.exports = {
         contentBase: './dist',
     },
     module: {
-        rules: [{
-            test: /\.css$/i, //正则，以.css结尾
-            use: ["style-loader", "css-loader"]
-        }, ],
+        rules: [
+            ...base.module.rules,
+            {
+                test: /\.css$/i, //正则，以.css结尾
+                use: ["style-loader", "css-loader"]
+            },
+        ],
     },
 };
